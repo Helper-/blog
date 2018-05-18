@@ -6,10 +6,8 @@
 mainGame{
   font-family: 'Press Start 2P', cursive;
   /* height: 1000px; */
-  /* width: 100%; */
+  width: 100%;
   overflow: hidden;
-  margin: 100px; 
-  padding: 100px;
 }
 
 /*Because we want to position items on and in them!*/
@@ -27,14 +25,16 @@ mainGame{
   background-image: url('../images/groundblock.png');
       
 }
-.scorebar{    
+.scorebar{  
+  display: flex;
+  align-items: center;  
   position: fixed;
   height: 120px;
   width:100%;    
   
-      font-family: 'Press Start 2P', cursive;
-      font-size: 180%;
-      color: white;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 180%;
+  color: white;
   
   padding-left: 50px;
   padding-right: 50px;

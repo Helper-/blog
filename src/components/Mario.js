@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import CountUp from 'react-countup';
 
-import './Home.css';
+import './Mario.css';
 
 import coin from '../images/Coin.gif';
 import bricks from '../images/Bricks.gif';
@@ -24,7 +24,8 @@ class Home extends Component {
         <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet" />
         <div className="sky">
           <div className="scorebar">
-            <p><span className="topline-mario">MARIO</span>
+            <p>
+              <span className="topline-mario">MARIO</span>
               <span className="topline-world">WORLD</span>
               <span className="topline-time">TIME</span>
               <span className="bottomline-score">135457</span>
