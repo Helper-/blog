@@ -10,7 +10,8 @@ class Main extends Component {
     return (
       <HashRouter>  
         <div>
-          <h1>Simple SPA</h1>
+          <Home />
+          {/* <h1>Simple SPA</h1>
           <ul className="header">
             <li><NavLink exact to="/">Home</NavLink></li>
             <li><NavLink to="/stuff">Stuff</NavLink></li>
@@ -20,7 +21,7 @@ class Main extends Component {
             <Route exact path="/" component={Home}/>
             <Route path="/stuff" component={Stuff}/>
             <Route path="/contact" component={Contact}/>
-          </div>
+          </div> */}
         </div>
       </HashRouter>
     );

@@ -1,0 +1,144 @@
+
+/*
+		** The images used were downloaded from: http://www.videogamesprites.net/SuperMarioBros1/ **
+*/
+
+mainGame{
+  font-family: 'Press Start 2P', cursive;
+  height: 1000px;
+  width: 100%;
+  overflow:hidden;
+  margin: 0; 
+  padding: 0;
+}
+
+/*Because we want to position items on and in them!*/
+.sky, .ground{
+  position: relative; 
+}
+
+.sky{
+  height: 700px;
+  background-color: #548CFF;    
+}
+.ground{ 
+  height: 75px;
+  background-color: #C84C0C; 
+  background-image: url('../images/groundblock.png');
+      
+}
+.scorebar{    
+  position: absolute;
+  height: 120px;
+  width:100%;    
+  
+      font-family: 'Press Start 2P', cursive;
+      font-size: 180%;
+      color: white;
+  
+  padding-left: 50px;
+  padding-right: 50px;
+  line-height: 0.2;
+}
+.cloud{
+  position: absolute;
+  height: 75px;
+  
+}
+  .cloud:nth-child(2){
+      top: 70px; 
+      -webkit-animation: wind 80s both infinite linear reverse; 
+              animation: wind 80s both infinite linear reverse;
+  }
+  .cloud:nth-child(3){
+      top: 170px;
+      -webkit-animation: wind 50s both infinite linear reverse;
+              animation: wind 50s both infinite linear reverse;
+  }
+  .cloud:nth-child(4){
+      top: 250px;
+      -webkit-animation: wind 30s both infinite linear reverse;
+              animation: wind 30s both infinite linear reverse;
+  }
+
+.skyblocks{
+  position: absolute;
+  z-index: 9;   
+  top: -250px;
+}
+  .brick{     
+      position: absolute;        
+      margin: -2px;
+  }
+      .brick:nth-child(1){
+          left:600px;
+      } 
+      .brick:nth-child(2){
+          left:670px;
+      } 
+      .brick:nth-child(3){
+          left:740px;
+      } 
+      .brick:nth-child(4){
+          left:810px;
+      } 
+
+.bush{
+  position: absolute;
+  top: -60px;
+  height: 60px;
+}
+  .bush:nth-child(1){
+      left: 150px;   
+  }
+  .bush:nth-child(2){
+      left: 900px;;   
+  }
+  .bush:nth-child(3){
+      left: 1500px;;   
+  }
+
+.mario{
+  position: absolute;
+  width: 71px;
+  height: 72px;
+  background: url('../images/result.png') left center;    
+  top: -70px;
+  left:0px;
+  
+  -webkit-animation: play 0.8s steps(4) infinite,
+              run 7s both infinite linear;
+  
+          animation: play 0.8s steps(4) infinite,
+              run 7s both infinite linear;
+}
+@-webkit-keyframes play{
+  100%{background-position: -284px;}
+}
+@keyframes play{
+  100%{background-position: -284px;}
+}
+@-webkit-keyframes run{
+  from{left: -200px;}
+  to{left: 100%;}
+}
+@keyframes run{
+  from{left: -200px;}
+  to{left: 100%;}
+}
+@-webkit-keyframes wind{
+  from{left: -300px;}
+  to{left: 100%;}
+}
+@keyframes wind{
+  from{left: -300px;}
+  to{left: 100%;}
+}
+
+.topline-mario{position:absolute;}
+.topline-world{position:absolute; left:55%;}
+.topline-time{position:absolute; left: 85%;}
+.bottomline-score{position:absolute; top: 90px;}
+.bottomline-coin{position:absolute; top: 80px; left:30%;}
+.bottomline-world{position:absolute; top: 90px; left:55%;}
+.bottomline-time{position:absolute; top: 90px; left:86%;}
