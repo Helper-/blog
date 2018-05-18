@@ -5,11 +5,11 @@
 
 mainGame{
   font-family: 'Press Start 2P', cursive;
-  height: 1000px;
-  width: 100%;
-  overflow:hidden;
-  margin: 0; 
-  padding: 0;
+  /* height: 1000px; */
+  /* width: 100%; */
+  overflow: hidden;
+  margin: 100px; 
+  padding: 100px;
 }
 
 /*Because we want to position items on and in them!*/
@@ -28,7 +28,7 @@ mainGame{
       
 }
 .scorebar{    
-  position: absolute;
+  position: fixed;
   height: 120px;
   width:100%;    
   
@@ -41,7 +41,7 @@ mainGame{
   line-height: 0.2;
 }
 .cloud{
-  position: absolute;
+  position: fixed;
   height: 75px;
   
 }
@@ -99,11 +99,11 @@ mainGame{
   }
 
 .mario{
-  position: absolute;
+  position: fixed;
   width: 71px;
   height: 72px;
   background: url('../images/result.png') left center;    
-  top: -70px;
+  top: 628px;
   left:0px;
   
   -webkit-animation: play 0.8s steps(4) infinite,

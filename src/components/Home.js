@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import CountUp from 'react-countup';
 
 import './Home.css';
 
@@ -26,10 +27,10 @@ class Home extends Component {
             <p><span className="topline-mario">MARIO</span>
               <span className="topline-world">WORLD</span>
               <span className="topline-time">TIME</span>
-              <span className="bottomline-score">OOOOOO</span>
-              <span className="bottomline-coin"><img src={coin} height="40px" /> x OO</span>
+              <span className="bottomline-score">135457</span>
+              <span className="bottomline-coin"><img src={coin} height="40px" /> x 37</span>
               <span className="bottomline-world">1 - 1</span>
-              <span className="bottomline-time">111</span>
+              <span className="bottomline-time"><CountUp start={0} end={999} duration={999} /></span>
             </p>
           </div>
 
