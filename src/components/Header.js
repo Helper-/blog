@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink, HashRouter } from "react-router-dom";
 
 import './Header.css';
 
@@ -10,9 +11,16 @@ class Header extends Component {
       <div className='header'>
         <div className='header-full' >
           <img src={googleIMG} />
-          <h2> This is the header! </h2>
         </div>
-        {/* <img className='header-full' src={googleIMG} /> */}
+        <HashRouter>
+          <nav className='header-nav'>
+            <ul>
+              <li><NavLink exact to="/" className='header-navlink' >Home</NavLink></li>
+              <li><NavLink to="/Blog" className='header-navlink' >Blog</NavLink></li>
+              <li><NavLink to="/contact" className='header-navlink' >Contact</NavLink></li>
+            </ul>
+          </nav>
+        </HashRouter>
       </div>
     );
   }

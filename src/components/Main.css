@@ -2,15 +2,10 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 /* Style the header */
 .header {
   grid-area: header;
   background-color: #fff;
-  padding: 30px;
   text-align: center;
   top: 0;
   left: 0;
@@ -25,7 +20,7 @@ body {
     'header header header header header header' 
     'left left middle middle right right' 
     'footer footer footer footer footer footer';
-    /* grid-column-gap: 10px; - if you want gap between the columns */
+  grid-column-gap: 5px;
 } 
 
 .left, .middle, .right {
