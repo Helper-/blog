@@ -1,18 +1,9 @@
-/* Style the header */
-.header {
-  grid-area: header;
-  background-color: #fff;
-  top: 0;
-  left: 0;
-  margin: 0 auto;
-  overflow: hidden;
-}
+
 
 .header-full {
-  background-position: center top;
-  background-image: url(../images/logo-tall.svg);
-  height: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
   padding: 4rem 0 0;
-  position: absolute;
+  /* position: absolute; */
   text-align: center;
 }
