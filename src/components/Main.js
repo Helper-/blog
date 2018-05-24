@@ -4,8 +4,7 @@ import { Route, Redirect, HashRouter } from "react-router-dom";
 import './Main.css';
 
 import Header from './Header';
-// import Home from './Home';
-import TestClock from './TestClock';
+import Home from './Home';
 import Blog from "./Blog";
 import Contact from "./Contact";
  
@@ -17,7 +16,7 @@ class Main extends Component {
         <HashRouter>
           <div className='middle' >  
             <div className="content">
-              <Route exact path="/" component={TestClock} />
+              <Route exact path="/" component={Home} />
               <Route path="/blog" component={Blog} />
               <Route path="/contact" component={Contact} />
             </div>

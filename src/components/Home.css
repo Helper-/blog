@@ -1,0 +1,22 @@
+.pip {
+  width: 100px;
+  height: 100px;
+  margin: 25px;
+  background-color: #525252;
+  border-radius: 100%;
+  transition: all .3s ease-in;
+}
+
+.pip--on {
+  background-color: #48d8b8;
+  transform: scale(1.1);
+}
+
+.clock { 
+  text-align: center;
+}
+
+.binary-digit-group {
+  display: inline-flex;
+  margin: 0 6px;
+}
